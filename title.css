@@ -1,0 +1,56 @@
+/* Navbar Stuff */
+ul#navlist {
+  list-style: none;
+  //display: inline;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0.8em;
+  //float: left;
+  //margin: auto;
+}
+
+#navlist a,
+#navlist a:hover,
+#navlist a:active {
+  font-family: sans-serif;
+  color: #c0c1c6;
+  text-decoration: none;
+}
+
+#navlist div {
+  padding-bottom: 4px;
+  border-bottom: 5px solid transparent;
+}
+
+#navlist div:hover {
+  border-bottom: 5px solid gray;
+}
+
+#navlist div.current {
+  border-bottom: 5px solid white;
+}
+/* End Navbar Stuff*/
+
+#navcontain {
+    position: absolute;
+    width: 100%;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0.8em 1.6em 0.8em 1.6em;
+  
+}
+
+#navbar h2 {
+  color: white;
+  font-family: sans-serif;
+}
