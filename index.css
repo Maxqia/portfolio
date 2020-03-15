@@ -1,0 +1,29 @@
+html, body {
+    height: 100%;
+}
+
+#bigheader {
+    position:relative;
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+
+#shiftleft {
+    position: absolute;
+    left: 15%;
+    height: 100%;
+}
+
+#align-vertical {
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#hi {
+    line-height: 0.4;
+    font-size: 25px;
+}
