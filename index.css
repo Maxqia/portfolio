@@ -2,6 +2,20 @@ html, body {
     height: 100%;
 }
 
+/*@media (min-width: 992px) {
+    html {
+        display:flex;
+        justify-content: center;
+    }
+
+    body {
+        max-width: 1700px;
+        border-right: 1px solid gray;
+        border-left: 1px solid gray;
+    }
+}*/
+
+
 #bigheader {
     position:relative;
     background-color: black;
@@ -26,4 +40,53 @@ html, body {
 #hi {
     line-height: 0.4;
     font-size: 25px;
+}
+
+#mainbody {
+    margin: 20px 75px 20px 75px;
+}
+
+#portflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#linkflex {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#linkflex * {
+    margin-left: 15px;
+}
+
+#portfolio {
+    margin-bottom: 3px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+    font-size: 30px;
+}
+
+#pbody {
+    margin-top: 0;
+    line-height: 1.2;
+}
+
+/*.project {
+    padding-top: 15px
+}*/
+
+.project:not(:last-child) {
+    border-bottom: 1px solid black;
+    padding-bottom: 7px;
+    margin-bottom: 4px;
+}
+
+.project * {
+    margin-bottom: 1px;
+}
+.project h3 {
+    font-size: 22px;
 }
