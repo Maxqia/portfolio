@@ -20,7 +20,7 @@ html, body {
     position:relative;
     background-color: black;
     color: white;
-    height: 500px;
+    height: 80%;
 }
 
 #shiftleft {
@@ -43,7 +43,10 @@ html, body {
 }
 
 #mainbody {
-    margin: 20px 75px 20px 75px;
+    margin-left: 9%;
+    margin-right: 9%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 #portflex {
