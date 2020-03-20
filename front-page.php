@@ -4,10 +4,12 @@
 <div id="mainbody">
     <div id="portflex">
         <h1 id="portfolio">Projects</h1>
-        <div id="linkflex">
-            <a href="https://github.com/Maxqia">GitHub</a>
-            <a href="https://www.linkedin.com/in/max-qian-8b98a6190/">LinkedIn</a>
-        </div>
+        <?php wp_nav_menu( array(
+            'theme_location' => 'portfolio-menu',
+            'container' => false,
+            'fallback_cb' => false,
+            'menu_id' => 'linkflex',
+        )) ?>
     </div>
 
     <div id="pbody">

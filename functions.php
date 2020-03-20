@@ -14,6 +14,7 @@ function portfolio_setup() {
   // This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
     'header-menu' => __( 'Header Menu' ),
+    'portfolio-menu' => __( 'Portfolio Menu (links)' ),
   ));
 }
 

@@ -71,9 +71,11 @@ html, body {
     display:flex;
     justify-content: flex-end;
     align-items: center;
+    list-style: none;
+    margin-bottom: 0;
 }
 
-#linkflex * {
+#linkflex li {
     margin-left: 15px;
 }
 

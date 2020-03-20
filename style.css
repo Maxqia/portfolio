@@ -15,7 +15,7 @@ ul#navlist {
   padding: 0;
 }
 
-li {
+#navlist li {
   margin-left: 0.8em;
   margin-right: 0.8em;
   margin-top: 0.2em;
