@@ -122,8 +122,10 @@ html, body {
 #contact div {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #contact div input {
     flex-grow: 1;
+    flex-shrink: 0;
 }
