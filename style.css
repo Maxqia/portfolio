@@ -3,3 +3,63 @@ Theme Name: Max's Portfolio
 Author: Max Qian
 Version: 0.0.1
 */
+
+/* Header Stuff */
+/* Navbar Stuff */
+ul#navlist {
+  list-style: none;
+  //display: inline;
+  display:flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+  margin-top: 0.2em;
+}
+
+#navlist a,
+#navlist a:hover,
+#navlist a:active {
+  font-family: sans-serif;
+  color: #c0c1c6;
+  text-decoration: none;
+}
+
+#navlist a {
+  padding-bottom: 3px;
+  border-bottom: 5px solid transparent;
+}
+
+#navlist a:hover {
+  border-bottom: 5px solid gray;
+}
+
+#navlist li.current-menu-item a {
+  border-bottom: 5px solid white;
+}
+/* End Navbar Stuff*/
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  padding-top:1em;
+  padding-bottom: 1em;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#navbar h2 * {
+  color: white;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+/* End Header Stuff */
