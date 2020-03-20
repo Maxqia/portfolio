@@ -9,16 +9,14 @@
     </div>
 
     <div id="pbody">
-        <div class="project">
-            <h3>Doing stupid shit</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales venenatis nisi. Proin eu massa pellentesque, scelerisque nibh sed, accumsan tellus. Donec consectetur tortor dui, ac laoreet lacus porta a. Ut gravida neque in tellus pulvinar, ut tincidunt arcu malesuada. Quisque eu feugiat eros, quis scelerisque felis. Pellentesque at erat odio. Vestibulum at urna molestie, fringilla turpis ac, ornare nibh. In non risus sit amet risus iaculis venenatis feugiat eu ligula. Phasellus non diam id turpis facilisis egestas. Donec risus sem, sollicitudin id efficitur ac, cursus eget nulla.</p>
-            <a href="#">Read More</a>
-        </div>
-        <div class="project">
-            <h3>attipv6</h3>
-            <p>So I switched from CommieCast to Alternating Terrors in hopes of getting a better deal. So we get it installed and for the first few days I play around with it to get it working right before we cancel Comcast.<br>So, First of all, they give you a dumbed down modem/router combo (Pace 5268AC, gotta get in those keywords!) instead of just a modem. It should have a DMZ mode right? Seems easy enough to get around right?<br>WRONG!</p>
-            <a href="#">Read More</a>
-        </div>
+        <?php
+          if ( have_posts() ) :
+              while( have_posts() ) :
+                  the_post();
+                  get_template_part('content', get_post_type());
+              endwhile;
+          endif;
+        ?>
         <div id="contact">
             <h1>Contact</h1>
             <form>
