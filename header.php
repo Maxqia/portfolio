@@ -11,23 +11,31 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/index.css">
 
     <?php wp_head(); ?>
-    <!--<title>Max Qian</title>-->
 </head>
 
 <body>
 
+<?php if (!is_front_page()): ?>
+<div id="header">
+<?php else: ?>
 <div id="bigheader">
     <div id="navcontain">
+<?php endif; ?>
         <div id="navbar">
-           <h2><!--Max's Website--></h2>
-           <ul id="navlist">
+          <h2>
+            <?php if (!is_front_page()): ?>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+            <?php endif; ?>
+          </h2>
+          <ul id="navlist">
              <li><div class="current"><a href="">Main Page</a></div></li>
              <li><div><a href="games.html" class="">Games</a></div></li>
              <li><div><a href="https://maxqia.wordpress.com" class="">Blog</a></div></li>
              <li><div><a href="#contact" class="">Contact</a></div></li>
           </ul>
         </div>
-    </div>
+<?php if (is_front_page()): ?>
+    </div> <!-- #navcontain -->
     <div id="shiftleft">
         <div id="align-vertical">
             <div id="hi">
@@ -38,4 +46,5 @@
             </div>
         </div>
     </div>
+<?php endif; ?>
 </div>
