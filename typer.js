@@ -21,14 +21,12 @@ function typeWriter() {
       setTimeout(typeWriter, nextSpeed);
   } else {
       blinkInterval = setInterval(blinkCursor, blinkTime);
-      setTimeout(stopBlink, blinkTime)
   }
 }
 
 var blink = false;
 var blinkCount = 1; // starts off blinking
 function blinkCursor() {
-  console.log(blink);
   if(blink) {
     element.innerHTML = curtxt + block;
     blinkCount++;
@@ -36,7 +34,7 @@ function blinkCursor() {
     element.innerHTML = curtxt;
   }
   blink = !blink;
-  
+
   if(blinkCount >= 10) { // stop at 10 (gnome does this if you're wondering where it came from)
     clearInterval(blinkInterval);
   }
