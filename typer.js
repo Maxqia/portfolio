@@ -1,6 +1,7 @@
 var i = 0;
 var speed = 100; /* The speed/duration of the effect in milliseconds */
 var block = "█";
+var blank = " ";
 var element = document.getElementById("typewriter");
 var txt = element.innerHTML;
 var curtxt = "";
@@ -31,7 +32,7 @@ function blinkCursor() {
     element.innerHTML = curtxt + block;
     blinkCount++;
   } else {
-    element.innerHTML = curtxt;
+    element.innerHTML = curtxt + blank;
   }
   blink = !blink;
 
