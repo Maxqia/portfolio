@@ -16,22 +16,23 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="header">
-    <nav id="navbar">
-      <h2>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-            rel="home"
-            style="<?php echo is_front_page() ? "visibility: hidden;" : ""?>"
-        >
-          <?php bloginfo( 'name' ); ?>
-        </a>
-      </h2>
-      <?php wp_nav_menu( array(
-        'theme_location' => 'header-menu',
-        'container' => false,
-        'fallback_cb' => false,
-        'menu_id' => 'navlist',
-      )) ?>
-    </nav>
-<?php /* #header closed in main template */?>
+<div id="headerbg">
+  <div id="header">
+      <nav id="navbar">
+        <h2>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>"
+              rel="home"
+              style="<?php echo is_front_page() ? "visibility: hidden;" : ""?>"
+          >
+            <?php bloginfo( 'name' ); ?>
+          </a>
+        </h2>
+        <?php wp_nav_menu( array(
+          'theme_location' => 'header-menu',
+          'container' => false,
+          'fallback_cb' => false,
+          'menu_id' => 'navlist',
+        )) ?>
+      </nav>
+<?php /* #header & #headerbg closed in main template */?>
 <?php /* body closed in footer template */?>

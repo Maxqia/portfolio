@@ -1,47 +1,29 @@
 
-/*@media (min-width: 992px) {
-    html {
-        display:flex;
-        justify-content: center;
-    }
+/* Header Stuff */
 
-    body {
-        max-width: 1700px;
-        border-right: 1px solid gray;
-        border-left: 1px solid gray;
-    }
-}*/
-
-#bigheader {
+#header {
     position:relative;
-    background-color: black;
-    color: white;
     height: 500px;
 }
+
+#hi {
+    line-height: 0.4;
+    font-size: 25px;
+
+    position: absolute;
+    left: 9vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* NavBar Stuff */
 
 #navcontain {
     position: absolute;
     width: 100%;
 }
 
-#shiftleft {
-    position: absolute;
-    left: 15%;
-    height: 100%;
-}
-
-#align-vertical {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#hi {
-    line-height: 0.4;
-    font-size: 25px;
-}
-
+/* Portfolio Stuff */
 #portflex {
     display: flex;
     justify-content: space-between;
@@ -89,6 +71,8 @@
     font-size: 22px;
 }
 
+
+/* Contact Form Stuff */
 #contact h1 {
     font-size: 30px;
 }

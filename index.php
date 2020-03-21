@@ -1,5 +1,5 @@
 <?php get_header() ?>
-</div> <!-- #header -->
+</div> <!-- #header --> </div> <!-- #headerbg -->
 <div id="mainbody">
     <div id="pbody">
         <?php

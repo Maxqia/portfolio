@@ -1,12 +1,12 @@
 <?php get_header() ?>
-
-    <div id="hi">
-        <p>Hello! I'm Max</p>
-        <p id="typewriter">Welcome to my website!</p>
-        <a href="#portfolio">portfolio</a>
-        <a href="#contact">contact</a>
-    </div>
-</div> <!-- #header -->
+<div id="hi">
+    <p>Hello! I'm Max</p>
+    <p id="typewriter">Welcome to my website!</p>
+    <a href="#portfolio">portfolio</a>
+    <a href="#contact">contact</a>
+</div>
+</div> <!-- #header --> 
+</div> <!-- #headerbg -->
 
 <div id="mainbody">
     <div id="portflex">

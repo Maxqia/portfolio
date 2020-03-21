@@ -16,13 +16,13 @@ html, body {
     padding-bottom: 20px;
 }
 
-#mainbody, #navbar {
+#mainbody, #header {
     max-width: 1500px;
     margin: 0 auto;
 }
 
 /* Header Stuff */
-#header {
+#headerbg, #header {
     position:relative;
     background-color: black;
     color: white;
