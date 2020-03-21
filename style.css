@@ -18,7 +18,6 @@ ul#navlist {
 #navlist li {
   margin-left: 0.8em;
   margin-right: 0.8em;
-  margin-top: 0.2em;
 }
 
 #navlist a,
@@ -51,15 +50,24 @@ ul#navlist {
 
   padding-top:1em;
   padding-bottom: 1em;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 #navbar h2 * {
   color: white;
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 25px;
 }
 
 /* End Header Stuff */
+
+
+/* blog post formatting */
+.blocks-gallery-item__caption {
+  background: none !important;
+  bottom: -30px !important;
+  color: black !important;
+}

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/style.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo('template_directory'); ?>/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
     <?php wp_head(); ?>
 </head>
@@ -39,6 +40,7 @@
         </div>
 <?php if (is_front_page()): ?>
     </div> <!-- #navcontain -->
+    <div id="shiftleftcontain">
     <div id="shiftleft">
         <div id="align-vertical">
             <div id="hi">
@@ -48,6 +50,7 @@
                 <a href="#contact">contact</a>
             </div>
         </div>
+    </div>
     </div>
 <?php endif; ?>
 </div>

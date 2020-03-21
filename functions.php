@@ -16,6 +16,9 @@ function portfolio_setup() {
     'header-menu' => __( 'Header Menu' ),
     'portfolio-menu' => __( 'Portfolio Menu (links)' ),
   ));
+
+
+  add_theme_support( 'post-thumbnails' );
 }
 
 endif;
