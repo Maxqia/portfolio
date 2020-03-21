@@ -1,5 +1,12 @@
 <?php get_header() ?>
 
+    <div id="hi">
+        <p>Hello! I'm Max</p>
+        <p id="typewriter">Welcome to my website!</p>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
+    </div>
+</div> <!-- #header -->
 
 <div id="mainbody">
     <div id="portflex">
@@ -40,5 +47,4 @@
         </div>
     </div>
 </div>
-<script src="<?php echo get_bloginfo('template_directory'); ?>/typer.js"></script>
 <?php get_footer(); ?>

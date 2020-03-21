@@ -24,4 +24,16 @@ function portfolio_setup() {
 endif;
 add_action( 'after_setup_theme', 'portfolio_setup' );
 
+
+function portfolio_enqueue() {
+  wp_enqueue_style('bootstrap', '//stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css');
+  wp_enqueue_style('roboto-font', '//fonts.googleapis.com/css2?family=Roboto&display=swap');
+  wp_enqueue_style('style', get_stylesheet_uri());
+  if (is_front_page()) {
+    wp_enqueue_style('front-page', get_template_directory_uri() . '/front-page.css');
+    wp_enqueue_script('typer', get_template_directory_uri() . '/typer.js', array(), false, true);
+  }
+}
+add_action('wp_enqueue_scripts', 'portfolio_enqueue');
+
 ?>

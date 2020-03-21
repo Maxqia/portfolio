@@ -4,7 +4,31 @@ Author: Max Qian
 Version: 0.0.1
 */
 
+/* Main Page Stuff */
+html, body {
+    height: 100%;
+}
+
+#mainbody {
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#mainbody, #navbar {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 /* Header Stuff */
+#header {
+    position:relative;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
 /* Navbar Stuff */
 ul#navlist {
   list-style: none;
@@ -40,7 +64,6 @@ ul#navlist {
 #navlist li.current-menu-item a {
   border-bottom: 5px solid white;
 }
-/* End Navbar Stuff*/
 
 #navbar {
   display: flex;
@@ -54,18 +77,18 @@ ul#navlist {
   padding-right: 5%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 #navbar h2 * {
   color: white;
   font-family: 'Roboto', sans-serif;
   text-decoration: none;
   font-size: 25px;
 }
+/* End Navbar Stuff */
 
 /* End Header Stuff */
 
 
-/* blog post formatting */
+/* blog post image formatting */
 .blocks-gallery-item__caption {
   background: none !important;
   bottom: -30px !important;
