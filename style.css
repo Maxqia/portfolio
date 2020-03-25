@@ -61,7 +61,8 @@ ul#navlist {
   border-bottom: 5px solid gray;
 }
 
-#navlist li.current-menu-item a {
+#navlist li.current-menu-item:not(.menu-item-object-custom) a,
+#navlist li.current-menu-item.menu-item-19 a {
   border-bottom: 5px solid white;
 }
 
@@ -91,6 +92,6 @@ ul#navlist {
 /* blog post image formatting */
 .blocks-gallery-item__caption {
   background: none !important;
-  bottom: -30px !important;
+  bottom: -20px !important;
   color: black !important;
 }

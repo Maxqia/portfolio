@@ -7,13 +7,26 @@
 }
 
 #hi {
-    line-height: 0.4;
-    font-size: 25px;
-
     position: absolute;
     left: 9vw;
     top: 50%;
     transform: translateY(-50%);
+
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    line-height: 0.4;
+    font-size: 25px;
+}
+
+#hi a {
+ /*margin-right: 3px;*/
+}
+
+#typewriter {
+  width: 300px;
 }
 
 /* NavBar Stuff */
@@ -22,6 +35,26 @@
     position: absolute;
     width: 100%;
 }
+
+/* about stuff */
+#about {
+  margin-bottom: 1rem;
+}
+
+#about p {
+  margin-bottom: 0px;
+}
+
+#about-title {
+  display: flex;
+}
+
+#about-title * {
+  border-bottom: 3px solid black;
+  font-size: 2em;
+  padding-bottom: 2px;
+}
+
 
 /* Portfolio Stuff */
 #portflex {
@@ -67,10 +100,20 @@
 .project * {
     margin-bottom: 1px;
 }
-.project h3 {
+
+.project > a > h3 {
     font-size: 22px;
+    margin-bottom: 1px;
 }
 
+.project > a:first-child {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+.project img {
+  margin: 10px;
+}
 
 /* Contact Form Stuff */
 #contact h1 {
