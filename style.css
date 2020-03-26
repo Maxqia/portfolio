@@ -4,9 +4,17 @@ Author: Max Qian
 Version: 0.0.1
 */
 
+/* General Stuff */
+
 /* Main Page Stuff */
 html, body {
     height: 100%;
+    margin: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 #mainbody {
