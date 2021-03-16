@@ -36,4 +36,10 @@ function portfolio_enqueue() {
 }
 add_action('wp_enqueue_scripts', 'portfolio_enqueue');
 
+// https://stackoverflow.com/a/64164537
+function magic_favicon_remover() {
+    exit;
+}
+add_action( 'do_faviconico', 'magic_favicon_remover');
+
 ?>
